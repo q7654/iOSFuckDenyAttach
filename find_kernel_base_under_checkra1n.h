@@ -7,8 +7,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-void kernel_task_init();
-uint64_t kernel_base_init();
+void kernel_task_init(void);
+uint64_t kernel_base_init(void);
 bool kernel_read(uint64_t address, void *data, size_t size);
 uint64_t kernel_read64(uint64_t address);
 bool kernel_write(uint64_t address, const void *data, size_t size);

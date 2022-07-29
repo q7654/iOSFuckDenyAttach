@@ -86,7 +86,7 @@ bool kernel_write(uint64_t address, const void *data, size_t size) {
 
 static uint64_t kernel_base;
 
-bool
+static bool
 is_kernel_base(uint64_t base) {
 	uint64_t header[2] = { 0x0100000cfeedfacf, 0x0000000200000000 };
 	uint64_t data[2] = {};
@@ -97,7 +97,7 @@ is_kernel_base(uint64_t base) {
 	return false;
 }
 
-bool
+static bool
 kernel_base_init_with_unsafe_heap_scan() {
 	uint64_t kernel_region_base = 0xfffffff000000000;
 	uint64_t kernel_region_end  = 0xfffffffbffffc000;

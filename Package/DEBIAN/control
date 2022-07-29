@@ -1,0 +1,12 @@
+Package: com.github.q7654.iOSFuckDenyAttach
+Name: iOSFuckDenyAttach
+Version: 0.1-1
+Description: tool that manually disable ptrace deny attach under kernel model. Support iphone8plus  ios 14.6  kernel.
+Section: System
+Depends: firmware (>= 5.0)
+Architecture: iphoneos-arm
+Author: q7654
+dev: q7654
+Homepage: https://github.com/q7654/iOSFuckDenyAttach
+Maintainer: q7654
+
